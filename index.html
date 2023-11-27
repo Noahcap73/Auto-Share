@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0c3d4e21cb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Auto Share</title>
+  </head>
+  <body class="h-screen bg-slate-100">
+    <!--Top of Page-->
+    <header class="tall:mt-14 tall:mb-14 mt-8 md:mt-10">
+      <h1
+        class="mb-8 text-center font-nunito text-5xl font-extrabold text-blue-600 sm:mb-20 sm:text-6xl lg:text-7xl"
+      >
+        Auto Share
+        <i class="fa-solid fa-car-side fa-md" style="color: #2563eb"></i>
+      </h1>
+    </header>
+
+    <!--Sign up-->
+    <div class="max-w-[800px]">
+      <h2 id="sign-up-text" class="text-center font-sans text-lg font-medium">
+        Sign up
+      </h2>
+      <div
+        class="mx-4 mb-9 flex max-w-[800px] rounded-lg border-2 border-blue-300 bg-white py-6 shadow-xl"
+      >
+        <form class="mx-auto text-center">
+          <div id="enter-name">
+            <i class="fa-solid fa-user fa-lg" style="color: #60a5fa"></i>
+            <input
+              class="my-2 rounded-lg border px-6 py-1 shadow-md transition-colors duration-300 focus:border-2 focus:border-blue-400 focus:shadow-md focus:shadow-slate-400 focus:outline-none focus:ring-0"
+              type="text"
+              placeholder="Enter Name"
+              name="name"
+              required
+            />
+            <br />
+          </div>
+
+          <div id="enter-email">
+            <i class="fa-solid fa-envelope fa-lg" style="color: #60a5fa"></i>
+            <input
+              class="my-2 rounded-lg border px-6 py-1 shadow-md transition-colors duration-300 focus:border-2 focus:border-blue-400 focus:shadow-md focus:shadow-slate-400 focus:outline-none focus:ring-0"
+              type="text"
+              placeholder="Enter Email"
+              name="email"
+              required
+            />
+            <br />
+          </div>
+
+          <div id="create-pswd">
+            <i class="fa-solid fa-key fa-lg" style="color: #60a5fa"></i>
+            <input
+              class="my-2 rounded-lg border px-6 py-1 shadow-md transition-colors duration-300 focus:border-2 focus:border-blue-400 focus:shadow-md focus:shadow-slate-400 focus:outline-none focus:ring-0"
+              type="password"
+              placeholder="Create Password"
+              name="psw"
+              minlength="8"
+              required
+            />
+            <br />
+          </div>
+
+          <div id="confirm-pswd">
+            <i class="fa-solid fa-check fa-xl" style="color: #60a5fa"></i>
+            <input
+              class="my-2 rounded-md border px-6 py-1 shadow-md transition-colors duration-300 focus:border-2 focus:border-blue-400 focus:shadow-md focus:shadow-slate-400 focus:outline-none focus:ring-0"
+              type="password"
+              placeholder="Confirm Password"
+              name="cpsw"
+              required
+            />
+            <br />
+          </div>
+
+          <button
+            id="signup-btn"
+            type="submit"
+            class="my-2 transform rounded-lg bg-blue-500 px-14 py-3 font-bold text-white transition-transform hover:translate-y-1 hover:opacity-70 hover:shadow-lg hover:shadow-sky-900"
+          >
+            Sign up
+          </button>
+          <br />
+
+          <p id="sign-in" class="mb-2">
+            Already have an account?
+            <span
+              id="sign-in-link"
+              class="text-blue-600 hover:cursor-pointer hover:text-blue-800 hover:underline"
+              >Sign in</span
+            >
+          </p>
+
+          <p id="sign-up" class="my-4 hidden">
+            Don't have an account?
+            <span
+              id="sign-up-link"
+              class="text-blue-600 hover:cursor-pointer hover:text-blue-800 hover:underline"
+              >Sign up</span
+            >
+          </p>
+
+          <p class="mb-4">Or</p>
+          <a
+            href="#"
+            class="mr-2 rounded-md border-2 border-slate-200 p-2 transition-all duration-300 hover:translate-x-5 hover:opacity-60 hover:shadow-md"
+            ><i class="fa-brands fa-google fa-2xl" style="color: #60a5fa"></i
+          ></a>
+
+          <a
+            href="#"
+            class="mr-2 rounded-md border-2 border-slate-200 p-2 transition-all duration-300 hover:translate-x-5 hover:opacity-60 hover:shadow-md"
+            ><i class="fa-brands fa-facebook fa-2xl" style="color: #60a5fa"></i
+          ></a>
+
+          <a
+            href="#"
+            class="transform rounded-md border-2 border-slate-200 p-2 px-2.5 transition-all duration-300 hover:translate-x-5 hover:opacity-60 hover:shadow-md"
+            ><i class="fa-brands fa-apple fa-2xl" style="color: #60a5fa"></i
+          ></a>
+        </form>
+      </div>
+    </div>
+    <!--Bottom Area on Mobile-->
+    <div class="tall:mt-24 mt-10 md:mt-32">
+      <div
+        id="quote"
+        class="mb-3 text-center font-nunito text-2xl italic text-black"
+      >
+        "Renting Cars Made Simple"
+      </div>
+      <div class="bottom-4 flex">
+        <!--Mobile Img-->
+        <img
+          class="scale-90 lg:hidden"
+          src="./images/pngfind.com-cars-in-png-5407975.png"
+        />
+
+        <!--Wider Img-->
+        <img
+          class="hidden max-w-3xl scale-75 lg:block"
+          src="https://i.pinimg.com/originals/e7/85/86/e785862c4ed9f1cc8d5fa58350d03266.png"
+        />
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
