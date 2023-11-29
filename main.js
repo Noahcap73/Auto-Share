@@ -35,15 +35,8 @@ const changeToSignIn = () => {
 };
 
 const changeToSignUp = () => {
-  enterName.classList.add("transition-all");
-  enterName.classList.remove("hidden");
-  createPassword[0].placeholder = "Create Password";
-  confirmPassword.classList.remove("hidden");
-  signUpButton.innerHTML = "Sign up";
-  signUpLink.classList.add("hidden");
-  signUpLink.classList.remove("block");
-  signInLink.classList.remove("hidden");
-  signUpText.innerHTML = "Sign up";
+  signInSection.remove();
+  document.container.appendChild(signUpSection);
 };
 
 signInChange.addEventListener("click", function () {
