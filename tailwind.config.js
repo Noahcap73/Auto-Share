@@ -7,7 +7,8 @@ module.exports = {
         nunito: ["Nunito", "sans-serif"],
       },
       screens: {
-        tall: { raw: "(min-height: 800px)" },
+        tall: { raw: "(min-height: 1000px)" },
+        "3xl": { raw: "(min-width: 2000px)" },
       },
     },
   },
