@@ -16,23 +16,36 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <header class="mx-8 mt-4 flex">
+  <body class="h-screen bg-slate-100">
+    <header class="mx-7 my-4 flex">
       <h1 class="mr-auto font-nunito text-2xl font-extrabold text-blue-600">
         Auto Share
         <i class="fa-solid fa-car-side fa-md" style="color: #2563eb"></i>
       </h1>
 
-      <nav>
+      <div>
         <i
-          class="fa-solid fa-bars fa-xl cursor-pointer"
+          id="menu-icon"
+          class="fa-solid fa-bars fa-xl cursor-pointer transition-transform"
           style="color: #2563eb"
         ></i>
-
-        <ul>
-          <li><a href="/login.html">sign up</a></li>
-        </ul>
-      </nav>
+      </div>
     </header>
+    <nav>
+      <ul
+        id="drop-nav"
+        class="mx-2 w-auto -translate-y-80 gap-3 rounded-md border-2 border-blue-500 bg-white text-center transition-all duration-500"
+      >
+        <li class="border-b-2 py-2">
+          <a href="/login.html"><button class="w-full">Sign Up</button></a>
+        </li>
+
+        <li class="border-b-2 py-2">
+          <a href="#"><button class="w-full">About</button></a>
+        </li>
+        <li class="py-2"><a href="#">Vehicles</a></li>
+      </ul>
+    </nav>
+    <script src="/main.js"></script>
   </body>
 </html>
