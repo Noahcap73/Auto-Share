@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
     <script
@@ -17,35 +17,124 @@
     ></script>
   </head>
   <body class="h-screen bg-slate-100">
-    <header class="mx-7 my-4 flex">
+    <header class="mx-6 my-4 flex border-b-2 pb-2">
       <h1 class="mr-auto font-nunito text-2xl font-extrabold text-blue-600">
         Auto Share
         <i class="fa-solid fa-car-side fa-md" style="color: #2563eb"></i>
       </h1>
 
       <div>
+        <!--For Smaller Viewports-->
         <i
           id="menu-icon"
-          class="fa-solid fa-bars fa-xl cursor-pointer transition-transform"
+          class="fa-solid fa-bars fa-xl transform cursor-pointer transition-transform"
           style="color: #2563eb"
         ></i>
       </div>
     </header>
+
     <nav>
       <ul
         id="drop-nav"
-        class="mx-2 w-auto -translate-y-80 gap-3 rounded-md border-2 border-blue-500 bg-white text-center transition-all duration-500"
+        class="mx-2 mb-2 w-auto -translate-y-80 gap-3 rounded-xl border-2 border-blue-500 bg-white text-center font-medium shadow-lg transition-all duration-500"
       >
         <li class="border-b-2 py-2">
-          <a href="/login.html"><button class="w-full">Sign Up</button></a>
+          <a href="/login.html"
+            ><button class="w-full hover:text-blue-700 hover:opacity-60">
+              Sign Up
+            </button></a
+          >
         </li>
 
         <li class="border-b-2 py-2">
-          <a href="#"><button class="w-full">About</button></a>
+          <a href="#"
+            ><button class="w-full hover:text-blue-700 hover:opacity-60">
+              About
+            </button></a
+          >
         </li>
-        <li class="py-2"><a href="#">Vehicles</a></li>
+        <li class="py-2">
+          <a href="#"
+            ><button class="w-full hover:text-blue-700 hover:opacity-60">
+              Vehicles
+            </button></a
+          >
+        </li>
       </ul>
     </nav>
+    <div
+      id="banner"
+      class="w-auto -translate-y-32 py-4 transition-all duration-500"
+    >
+      <p
+        class="pb-2 text-center font-nunito text-2xl font-extrabold italic text-slate-800"
+      >
+        Share moments, share miles.
+      </p>
+      <p class="text-center font-nunito text-sm font-medium">
+        Auto Share connects you to your perfect ride.
+      </p>
+      <img class="mb-3" src="/images/bluecarcartoon-fotor-20231204142046.png" />
+    </div>
+
+    <div
+      id="search-bar"
+      class="mx-4 my-4 -translate-y-32 rounded-xl border-2 border-blue-300 bg-white py-3 shadow-lg"
+    >
+      <h2
+        class="pb-2 text-center font-nunito text-xl font-[700] text-slate-800"
+      >
+        Find Available Cars:
+      </h2>
+
+      <form class="grid gap-4 md:grid-cols-4">
+        <div class="text-center">
+          <h3>
+            <i class="fa-solid fa-location-dot" style="color: #60a5fa"></i>
+            Where
+          </h3>
+          <input
+            class="w-[80%] rounded-full border py-2 text-center shadow-md transition-colors duration-200 focus:border-2 focus:border-blue-400 focus:outline-none focus:ring-0"
+            type="text"
+            placeholder="City, airport, address or hotel"
+          />
+        </div>
+
+        <div class="text-center">
+          <h3>
+            <i class="fa-solid fa-calendar-days" style="color: #60a5fa"></i>
+            From
+          </h3>
+          <input
+            class="w-[80%] rounded-full border px-3 py-2 text-center shadow-md transition-colors duration-200 focus:border-2 focus:border-blue-400 focus:outline-none focus:ring-0"
+            type="date"
+            placeholder="yes"
+          />
+        </div>
+
+        <div class="text-center">
+          <h3>
+            <i class="fa-solid fa-calendar-days" style="color: #60a5fa"></i>
+            Until
+          </h3>
+          <input
+            class="w-[80%] rounded-full border px-3 py-2 text-center text-opacity-5 shadow-md transition-colors duration-200 focus:border-2 focus:border-blue-400 focus:outline-none focus:ring-0"
+            type="date"
+            placeholder=""
+          />
+        </div>
+
+        <div class="text-center">
+          <button
+            type="submit"
+            class="my-2 w-32 transform rounded-full bg-blue-500 py-3 font-bold text-white transition-transform hover:translate-y-1 hover:opacity-70 hover:shadow-lg hover:shadow-sky-900"
+          >
+            Search <i class="fa-solid fa-magnifying-glass ml-2"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+
     <script src="/main.js"></script>
   </body>
 </html>
