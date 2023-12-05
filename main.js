@@ -9,7 +9,6 @@ const toggleDropDownMenu = () => {
   bannerSection.classList.toggle("-translate-y-32");
 };
 
-menuIcon.addEventListener("click", function (e) {
-  e.stopPropagation();
+menuIcon.addEventListener("click", function () {
   toggleDropDownMenu();
 });
