@@ -18,114 +18,149 @@
   </head>
   <body class="h-screen bg-slate-100">
     <header class="mx-6 my-4 flex border-b-2 pb-2">
-      <h1 class="mr-auto font-nunito text-2xl font-extrabold text-blue-600">
+      <h1
+        class="mr-auto font-nunito text-2xl font-extrabold text-blue-600 sm:text-3xl"
+      >
         Auto Share
         <i class="fa-solid fa-car-side fa-md" style="color: #2563eb"></i>
       </h1>
 
-      <div>
-        <!--For Smaller Viewports-->
+      <div class="lg:hidden">
+        <!-- Smaller Viewports Nav -->
         <i
           id="menu-icon"
           class="fa-solid fa-bars fa-xl transform cursor-pointer transition-transform"
           style="color: #2563eb"
         ></i>
       </div>
+
+      <nav class="hidden lg:block">
+        <ul class="flex gap-8 font-nunito text-lg font-bold">
+          <li class="py-1">
+            <a
+              href="#"
+              class="transition-all duration-300 ease-in-out hover:text-blue-500 hover:opacity-80"
+              >Vehicles <i class="fa-solid fa-car"></i
+            ></a>
+          </li>
+          <li class="py-1">
+            <a
+              href="#"
+              class="transition-all duration-300 ease-in-out hover:text-blue-500 hover:opacity-80"
+              >Sharer <i class="fa-solid fa-people-arrows"></i
+            ></a>
+          </li>
+          <li>
+            <a href="login.html"
+              ><button
+                class="rounded-full bg-blue-600 px-4 py-1 text-white shadow-md shadow-slate-400 transition-all duration-300 ease-in-out hover:translate-y-1 hover:opacity-70 hover:shadow-none"
+              >
+                Sign Up
+                <i class="fa-regular fa-user" style="color: #fff"></i></button
+            ></a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
+    <!-- Smaller Veiwports Nav-->
     <nav>
       <ul
         id="drop-nav"
-        class="mx-2 mb-2 w-auto -translate-y-80 gap-3 rounded-xl border-2 border-blue-500 bg-white text-center font-medium shadow-lg transition-all duration-500"
+        class="mx-2 mb-2 w-auto -translate-y-80 gap-3 rounded-xl border-2 border-blue-500 bg-white text-center font-bold shadow-lg transition-all duration-500 lg:hidden"
       >
         <li class="border-b-2 py-2">
           <a href="login.html"
             ><button class="w-full hover:text-blue-700 hover:opacity-60">
-              Sign Up
-            </button></a
-          >
+              Sign Up <i class="fa-regular fa-user"></i></button
+          ></a>
         </li>
 
         <li class="border-b-2 py-2">
           <a href="#"
             ><button class="w-full hover:text-blue-700 hover:opacity-60">
-              About
-            </button></a
-          >
+              Sharer <i class="fa-solid fa-people-arrows"></i></button
+          ></a>
         </li>
         <li class="py-2">
           <a href="#"
-            ><button class="w-full hover:text-blue-700 hover:opacity-60">
-              Vehicles
-            </button></a
-          >
+            ><button class="w-full hover:text-blue-500 hover:opacity-60">
+              Vehicles <i class="fa-solid fa-car"></i></button
+          ></a>
         </li>
       </ul>
     </nav>
     <div
       id="banner"
-      class="w-auto -translate-y-32 py-4 transition-all duration-500"
+      class="w-auto -translate-y-32 py-4 transition-all duration-500 lg:-translate-y-0"
     >
       <p
-        class="pb-2 text-center font-nunito text-2xl font-extrabold italic text-slate-800"
+        class="pb-2 text-center font-nunito text-2xl font-extrabold italic text-slate-800 sm:text-3xl lg:text-4xl"
       >
         Share moments, share miles.
       </p>
-      <p class="text-center font-nunito text-sm font-medium">
+      <p
+        class="text-center font-nunito text-sm font-medium sm:text-base lg:text-lg"
+      >
         Auto Share connects you to your perfect ride.
       </p>
-      <img class="mb-3" src="images/bluecarcartoon-fotor-20231204142046.png" />
+      <img
+        class="mx-auto mb-3 md:w-[70%] lg:w-[60%]"
+        src="images/bluecarcartoon-fotor-20231204142046.png"
+      />
     </div>
 
+    <!-- Vehicle Search -->
     <div
       id="search-bar"
-      class="mx-4 my-4 -translate-y-32 rounded-xl border-2 border-blue-300 bg-white py-3 shadow-lg"
+      class="mx-2 my-4 -translate-y-32 rounded-xl border-2 border-blue-300 bg-white py-3 shadow-lg lg:mt-0 lg:-translate-y-0"
     >
       <h2
-        class="pb-2 text-center font-nunito text-xl font-[700] text-slate-800"
+        class="pb-2 text-center font-nunito text-xl font-[700] text-slate-800 sm:text-2xl"
       >
         Find Available Cars:
       </h2>
 
-      <form class="grid gap-4 md:grid-cols-4">
-        <div class="text-center">
+      <form class="mx-2 grid gap-2 lg:grid-cols-4 lg:py-8">
+        <div class="text-center sm:text-lg">
           <h3>
             <i class="fa-solid fa-location-dot" style="color: #60a5fa"></i>
             Where
           </h3>
           <input
-            class="w-[80%] rounded-full border py-2 text-center shadow-md transition-colors duration-200 focus:border-2 focus:border-blue-400 focus:outline-none focus:ring-0"
+            class="w-[80%] rounded-full border py-2 text-center shadow-md transition-colors duration-200 focus:border-2 focus:border-blue-400 focus:outline-none focus:ring-0 lg:w-full"
             type="text"
             placeholder="City, airport, address or hotel"
           />
         </div>
 
-        <div class="text-center">
+        <div class="text-center sm:text-lg">
           <h3>
             <i class="fa-solid fa-calendar-days" style="color: #60a5fa"></i>
             From
           </h3>
           <input
-            class="w-[80%] rounded-full border px-3 py-2 text-center shadow-md transition-colors duration-200 focus:border-2 focus:border-blue-400 focus:outline-none focus:ring-0"
+            class="w-[80%] rounded-full border px-3 py-2 text-center shadow-md transition-colors duration-200 focus:border-2 focus:border-blue-400 focus:outline-none focus:ring-0 lg:w-full"
             type="date"
           />
         </div>
 
-        <div class="text-center">
+        <div class="text-center sm:text-lg">
           <h3>
             <i class="fa-solid fa-calendar-days" style="color: #60a5fa"></i>
             Until
           </h3>
           <input
-            class="w-[80%] rounded-full border px-3 py-2 text-center text-opacity-5 shadow-md transition-colors duration-200 focus:border-2 focus:border-blue-400 focus:outline-none focus:ring-0"
+            class="w-[80%] rounded-full border px-3 py-2 text-center text-opacity-5 shadow-md transition-colors duration-300 focus:border-2 focus:border-blue-400 focus:outline-none focus:ring-0 lg:w-full"
             type="date"
           />
         </div>
 
-        <div class="text-center">
+        <div class="text-center sm:text-lg">
+          <h3 class="invisible">space</h3>
           <button
             type="submit"
-            class="my-2 w-32 transform rounded-full bg-blue-500 py-3 font-bold text-white transition-transform hover:translate-y-1 hover:opacity-70 hover:shadow-lg hover:shadow-sky-900"
+            class="transform rounded-full bg-blue-500 px-5 py-2 font-bold text-white shadow-md shadow-slate-500 transition-transform hover:translate-y-1 hover:opacity-70 hover:shadow-none hover:shadow-sky-900 sm:w-40 lg:py-2"
           >
             Search <i class="fa-solid fa-magnifying-glass ml-2"></i>
           </button>
@@ -133,50 +168,70 @@
       </form>
     </div>
 
+    <!-- Welcome Section -->
     <div
-      class="mx-2 mb-6 -translate-y-20 rounded-lg bg-white px-2 py-5 font-nunito text-slate-800 shadow-md"
+      class="mx-2 mb-6 -translate-y-20 rounded-lg bg-white px-2 py-5 font-nunito text-slate-800 shadow-md lg:my-5 lg:flex lg:-translate-y-0"
     >
-      <h2 class="pb-5 text-center font-nunito text-2xl font-bold text-blue-600">
-        Welcome to Auto Share!
-      </h2>
-      <p class="pb-5">
-        Your Ultimate Destination for Convenient Car Rentals and Peer-to-Peer
-        Car Sharing! At <em><strong>Auto Share</strong></em
-        >, we're passionate about providing a seamless and innovative platform
-        that connects car owners with individuals seeking reliable and
-        affordable transportation solutions.
-      </p>
+      <div>
+        <h2
+          class="pb-5 text-center font-nunito text-2xl font-bold text-blue-500 sm:text-3xl"
+        >
+          Welcome to Auto Share!
+        </h2>
+        <p class="pb-5 sm:text-lg lg:px-3">
+          Your Ultimate Destination for Convenient Car Rentals and Peer-to-Peer
+          Car Sharing! At
+          <em><strong class="text-blue-500">Auto Share</strong></em
+          >, we're passionate about providing a seamless and innovative platform
+          that connects car owners with individuals seeking reliable and
+          affordable transportation solutions.
+        </p>
+      </div>
       <img
-        class="rounded-lg bg-slate-600 shadow-md shadow-slate-500"
+        class="mx-auto rounded-lg bg-slate-600 shadow-md shadow-slate-500 lg:ml-5"
         src="images/medium-break-room-driving.jpg"
       />
     </div>
 
+    <!-- Sharer Section -->
     <div
-      class="mx-2 -translate-y-20 rounded-lg bg-white px-2 py-5 font-nunito text-slate-800 shadow-md"
+      class="mx-2 -translate-y-20 rounded-lg bg-white px-2 py-5 font-nunito text-slate-800 shadow-md lg:flex lg:-translate-y-0"
     >
-      <h2 class="pb-5 text-center font-nunito text-2xl font-bold text-blue-600">
-        Become a Sharer!
-      </h2>
-      <p class="pb-2">
-        Are you a car owner looking to offset the costs of ownership?
-        <strong><em>Share</em></strong> your vehicle on our platform and earn
-        extra income by renting it out to our trustworthy community of users.
-        Manage your listings, set your prices, and connect with responsible
-        renters.
-      </p>
-
-      <p class="pb-3">
-        Learn more
-        <a class="font-bold text-blue-600 underline hover:opacity-50" href="#"
-          >HERE!</a
+      <div class="lg:order-last">
+        <h2
+          class="pb-5 text-center font-nunito text-2xl font-bold text-blue-500 sm:text-3xl"
         >
-      </p>
+          Become a Sharer!
+        </h2>
+        <p class="pb-2 sm:text-lg lg:px-8">
+          Are you a car owner looking to offset the costs of ownership?
+          <strong><em>Share</em></strong> your vehicle on our platform and earn
+          extra income by renting it out to our trustworthy community of users.
+          Manage your listings, set your prices, and connect with responsible
+          renters.
+        </p>
+
+        <p class="pb-3 sm:text-lg lg:px-8">
+          Learn more
+          <a class="font-bold text-blue-600 underline hover:opacity-50" href="#"
+            >HERE!</a
+          >
+        </p>
+      </div>
+
       <img
-        class="h-64 w-full rounded-lg bg-slate-600 object-cover shadow-md shadow-slate-500"
+        class="mx-auto h-64 w-full rounded-lg bg-slate-600 object-cover shadow-md shadow-slate-500 sm:h-auto sm:w-72 sm:object-cover lg:mr-5"
         src="images/car-sharing.png"
       />
     </div>
+
+    <footer class="border-t-2 pb-4 pt-2 lg:mt-8">
+      <p class="pb-4 text-sm italic">
+        *This is not a real working site. This site is a project where I
+        practice my web developement skills.*
+      </p>
+      <p class="text-sm font-medium">©Noah Capil</p>
+    </footer>
 
     <script src="main.js"></script>
   </body>
