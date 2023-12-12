@@ -9,6 +9,16 @@ const toggleDropDownMenu = () => {
   bannerSection.classList.toggle("-translate-y-32");
 };
 
+const initialize = () => {
+  let input = document.getElementById("location-search");
+  new google.maps.places.Autocomplete(input),
+    {
+      types: ["geocode"],
+    };
+};
+
+google.maps.event.addDomListener(window, "load", initialize);
+
 menuIcon.addEventListener("click", function () {
   toggleDropDownMenu();
 });
