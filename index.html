@@ -29,7 +29,7 @@
       </h1>
 
       <div class="lg:hidden">
-        <!-- Smaller Viewports Nav -->
+        <!-- Smaller Viewports Nav Menu Icon -->
         <i
           id="menu-icon"
           class="fa-solid fa-bars fa-xl transform cursor-pointer transition-transform"
@@ -37,6 +37,7 @@
         ></i>
       </div>
 
+      <!--Wider Viewport Nav-->
       <nav class="hidden lg:block">
         <ul class="flex gap-8 font-nunito text-lg font-bold">
           <li class="py-1">
@@ -136,13 +137,7 @@
             type="text"
             placeholder="City, airport, address or hotel"
             autocomplete="on"
-          />
-          <input
-            id="address"
-            name="address"
-            value=""
-            type="hidden"
-            placeholder=""
+            required
           />
         </div>
 
@@ -154,6 +149,7 @@
           <input
             class="w-[80%] rounded-full border px-3 py-2 text-center shadow-md transition-colors duration-300 focus:border-2 focus:border-blue-400 focus:outline-none focus:ring-0 lg:w-full"
             type="date"
+            required
           />
         </div>
 
@@ -165,6 +161,7 @@
           <input
             class="w-[80%] rounded-full border px-3 py-2 text-center text-opacity-5 shadow-md transition-colors duration-300 focus:border-2 focus:border-blue-400 focus:outline-none focus:ring-0 lg:w-full"
             type="date"
+            required
           />
         </div>
 
@@ -190,7 +187,7 @@
         >
           Welcome to Auto Share!
         </h2>
-        <p class="pb-5 sm:text-lg lg:px-3">
+        <p class="pb-5 sm:text-lg lg:px-10">
           Your Ultimate Destination for Convenient Car Rentals and Peer-to-Peer
           Car Sharing! At
           <em><strong class="text-blue-500">Auto Share</strong></em
@@ -215,7 +212,7 @@
         >
           Become a Sharer!
         </h2>
-        <p class="pb-2 sm:text-lg lg:px-8">
+        <p class="pb-2 sm:text-lg lg:px-12">
           Are you a car owner looking to offset the costs of ownership?
           <strong><em class="text-blue-500">Share</em></strong> your vehicle on
           our platform and earn extra income by renting it out to our
@@ -223,7 +220,7 @@
           and connect with responsible renters.
         </p>
 
-        <p class="pb-3 sm:text-lg lg:px-8">
+        <p class="pb-3 sm:text-lg lg:px-12">
           Learn more
           <a
             class="font-bold text-blue-600 underline hover:opacity-50"
