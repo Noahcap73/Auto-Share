@@ -15,6 +15,9 @@ module.exports = {
         tall: { raw: "(min-height: 1000px)" },
         "3xl": { raw: "(min-width: 2000px)" },
       },
+      animation: {
+        "bounce-slow": "bounce 700ms ease-in-out infinite",
+      },
     },
   },
   plugins: [],
