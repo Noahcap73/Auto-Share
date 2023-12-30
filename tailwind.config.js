@@ -15,8 +15,14 @@ module.exports = {
         tall: { raw: "(min-height: 1000px)" },
         "3xl": { raw: "(min-width: 2000px)" },
       },
+      keyframes: {
+        "bounce-slow": {
+          "0%, 100%": { transform: "translateY(-80%)" },
+          "50%": { transform: "none" },
+        },
+      },
       animation: {
-        "bounce-slow": "bounce 700ms ease-in-out infinite",
+        "bounce-slow": "bounce-slow 700ms ease-in infinite",
       },
     },
   },
