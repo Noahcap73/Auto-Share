@@ -1099,16 +1099,6 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.shadow-black {
-  --tw-shadow-color: #000;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-slate-600 {
-  --tw-shadow-color: #475569;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1408,11 +1398,6 @@ video {
     margin-bottom: auto;
   }
 
-  .lg\:my-12 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1531,6 +1516,10 @@ video {
     padding-top: 1.25rem;
   }
 
+  .lg\:pb-8 {
+    padding-bottom: 2rem;
+  }
+
   .lg\:text-center {
     text-align: center;
   }
@@ -1567,11 +1556,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:my-16 {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
   .xl\:my-20 {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -1602,12 +1586,18 @@ video {
     align-items: center;
   }
 
-  .xl\:gap-16 {
-    gap: 4rem;
-  }
-
   .xl\:gap-14 {
     gap: 3.5rem;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -1616,8 +1606,28 @@ video {
     margin-left: 7rem;
   }
 
+  .\32xl\:mr-14 {
+    margin-right: 3.5rem;
+  }
+
+  .\32xl\:mr-20 {
+    margin-right: 5rem;
+  }
+
   .\32xl\:w-\[30\%\] {
     width: 30%;
+  }
+
+  .\32xl\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .\32xl\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .\32xl\:w-\[45\%\] {
+    width: 45%;
   }
 
   .\32xl\:min-w-\[900px\] {
